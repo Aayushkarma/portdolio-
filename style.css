@@ -1,0 +1,101 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section#about, section#skills, section#projects, section#contact {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+section#portfolio .gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#portfolio .item {
+    width: 30%;
+}
+
+section#portfolio img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header h1, header nav ul {
+        float: none;
+        text-align: center;
+    }
+    header nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    section#portfolio .gallery {
+        flex-direction: column;
+    }
+
+    section#portfolio .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
